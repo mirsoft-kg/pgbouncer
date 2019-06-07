@@ -22,5 +22,5 @@ sed -i "s/<POSTGRES_PASSWORD>/$POSTGRES_PASSWORD/g" /etc/pgbouncer/pgbouncer.ini
 sed -i "s/<POSTGRES_PORT>/$POSTGRES_PORT/g" /etc/pgbouncer/pgbouncer.ini
 
 echo "Starting pgbouncer..."
-exec /usr/bin/pgbouncer -q -u postgres /etc/pgbouncer/pgbouncer.ini
+exec /usr/bin/pgbouncer -u postgres /etc/pgbouncer/pgbouncer.ini
 
