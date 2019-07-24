@@ -132,7 +132,7 @@ admin_users = <POSTGRES_USER>
 ;   session      - after client disconnects
 ;   transaction  - after transaction finishes
 ;   statement    - after statement finishes
-pool_mode = transaction
+pool_mode = session
 
 ;
 ; Query for cleaning connection immediately after releasing from client.
